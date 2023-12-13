@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-poppins bg-[url('../images/bg-intro-mobile.png')] bg-center bg-red desktop:bg-[url('../images/bg-intro-desktop.png')] desktop:w-screen desktop2:h-screen desktop:flex desktop:flex-col desktop:justify-center desktop:items-center;
+}
+
+input {
+	@apply border border-grayishBlue text-darkBlue rounded-md p-3 text-sm font-semibold placeholder:text-grayishBlue focus:outline-blue;
+}
+
+.input-form {
+	@apply relative flex flex-col gap-2;
+}
+
+.error-icon {
+	@apply w-6 absolute top-3 right-5;
+}
+
+.input-error {
+	@apply border-2 border-red placeholder:text-red;
+}
+
+.small-error {
+	@apply text-red text-right italic text-xs font-medium;
+}
+
+strong {
+	@apply font-semibold;
+}
